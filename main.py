@@ -10,5 +10,4 @@ def full_process(language_out, language_in):
     print(transcribed_text)
     t_text = translator_text.translate_text(transcribed_text, language_out)
     print(t_text)
-    return t_text[0]
-full_process("Spanish", "English")
+    return transcribed_text, t_text[0]
