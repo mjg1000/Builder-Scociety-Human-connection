@@ -7,13 +7,13 @@ Title = "Translator"
 SupportedLanguages = ['English','Spanish','French','Hindi']
 
 root = tk.Tk()
-root.geometry("1300x600+600+300")
+root.geometry("1000x400+400+100")
 root.title(Title)
 root.resizable(False, False)
 
 
-OriginalText = tk.Text(root, {"height": 20, "width": 65})
-TranslatedText = tk.Text(root, {"height": 20, "width": 65})
+OriginalText = tk.Text(root, {"height": 15, "width": 48})
+TranslatedText = tk.Text(root, {"height": 15, "width": 48})
 
 
 def texttospeech():
