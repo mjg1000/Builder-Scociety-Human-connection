@@ -55,9 +55,9 @@ LanguageOriginBox.state(["readonly"])  # prevents typing invalid entries
 
 
 TranslateButton = ttk.Button(root, text="Translate\n       -->", command=translate)
-SpeakButton = ttk.Button(root, text="", command=texttospeech)
+SpeakButton = ttk.Button(root, text="Transcribe \n & \n Translate", command=texttospeech)
 
-SpeakButton.place(relx=0.25,rely=0.1,anchor="center")
+SpeakButton.place(relx=0.5,rely=0.5,anchor="center")
 OriginalText.place(relx=0.25, rely=0.5,anchor="center")
 TranslatedText.place(relx=0.75, rely=0.5,anchor="center")
 # TranslateButton.place(relx=0.5,rely=0.5,anchor="center")
