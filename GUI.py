@@ -46,11 +46,11 @@ lang_inside.set("English")
 Originlang_inside = tk.StringVar(root)
 Originlang_inside.set("English")
 LanguageBox = ttk.Combobox(root, textvariable=lang_inside, values=values, width=30)
-LanguageBox.set("Select an Option")
+LanguageBox.set("English")
 LanguageBox.state(["readonly"])  # prevents typing invalid entries
 
 LanguageOriginBox = ttk.Combobox(root, textvariable=Originlang_inside, values=SupportedLanguages, width=30)
-LanguageOriginBox.set("Select an Option")
+LanguageOriginBox.set("English")
 LanguageOriginBox.state(["readonly"])  # prevents typing invalid entries
 
 
