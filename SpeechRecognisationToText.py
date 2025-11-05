@@ -1,14 +1,14 @@
 import speech_recognition as sr
 
-def recognize_speech_with_language_choice():
+def recognize_speech_with_language_choice(lang_code):
     """
     Prompts the user to select a language, then captures audio
     from the microphone and returns the recognized text in that language.
     """
     
     # 1. Get language input from the user
-    print("Please enter the BCP-47 language code for the language you will be speaking.")
-    lang_code = input("Examples: 'en-US' (English), 'es-ES' (Spanish), 'fr-FR' (French), 'hi-IN' (Hindi): ")
+    # print("Please enter the BCP-47 language code for the language you will be speaking.")
+    # lang_code = input("Examples: 'en-US' (English), 'es-ES' (Spanish), 'fr-FR' (French), 'hi-IN' (Hindi): ")
     
 
     if not lang_code:
@@ -34,7 +34,7 @@ def recognize_speech_with_language_choice():
             # 5. Use Google's API with the user-specified language
             text = recognizer.recognize_google(audio_data, language=lang_code)
             
-            return f"You said: {text}"
+            return text
 
         except sr.WaitTimeoutError:
             return "Error: No speech detected. Please try again."
